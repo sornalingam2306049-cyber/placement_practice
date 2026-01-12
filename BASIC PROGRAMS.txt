@@ -1,0 +1,1126 @@
+AMBICABLE NUMBER
+
+for(i=1;i<=num/2;i++){
+        if(num%i==0)
+            sum+=i;
+    }
+    for(i=1;i<=m/2;i++){
+        if(m%i==0){
+            sum1+=i;
+        }
+    }
+    if(sum1==num&&sum==m)
+        printf("amcable pair");
+    else
+        printf("not ambicable pair");
+
+PRIME NUMBER
+
+ for(i=1;i<=n;i++){
+        if(n%i==0){
+            c++;
+        }
+    }
+    if(c==2)
+        printf("It is a Prime numberr");
+    else{
+        printf("It is not a prime number");
+    }
+
+ANOTHER -2
+
+for(i=1;i<=n;i++){
+        if(n%i==0){
+            printf("%d ",i);
+        }
+    for(i=2;i<=n/2;i++){
+        if(n%i==0){
+            break;
+        }
+    }
+    if(i<=n/2){
+        printf("not prime");
+    }
+    else{
+        printf("prime number");
+    }
+
+ABUNDANT,PERFECT,DIFICIENT
+       SUM OF THE FACTORS 
+
+    int n,i,sum=0;
+    scanf("%d",&n);
+    for(i=1;i<=n/2;i++){
+            if(n%i==0){
+                sum+=i;
+            }
+    }
+    if(sum<n)
+        printf("deficient");
+    else if(sum>n){
+        printf("abundant");
+    }
+    else{
+        printf("perfect");
+
+MAGICAL NUMBER
+
+int n,sum=0,r=0;
+    scanf("%d",&n);
+    int temp1=n;
+    while(n!=0){
+        sum=sum+n%10;
+        n/=10;
+    }
+    int temp=sum;
+    while(temp!=0){
+            r=(r*10)+temp%10;
+            temp/=10;
+    }
+    //printf("%d",sum);
+    if (temp1==(r*sum)) {
+        printf("Magic Number");
+    }
+    else{
+        printf("It is not a Magic Number");
+    }
+NUMBER PATTERNS
+
+                  BOX
+***
+***
+***
+        int n,i,j;
+        scanf("%d",&n);
+        for(i=0;i<n;printf("\n"),i++){
+            for(j=0;j<n;j++){
+                printf("*");
+
+                  DECREMENT
+****
+***
+**
+*
+
+        int n,i,j;
+        scanf("%d",&n);
+        for(i=5;i>0;printf("\n"),i--){
+            for(j=0;j<i;j++){
+                printf("*");
+            }
+        }
+*
+**
+***
+****
+        int n,i,j;
+        scanf("%d",&n);
+        for(i=5;i>0;printf("\n"),i--){
+            for(j=0;j<i;j++){
+                printf("*");
+            }
+        }
+diamond
+
+ int main(){
+        int n,i,j,k;
+        scanf("%d",&n);
+        for(i=1;i<=n;i++){
+            for(j=1;j<=n-i;j++){
+                    printf("   ");
+            }
+            for(k=1;k<=i*2-1;k++){
+                printf(" * ");
+            }
+            printf("\n");
+        }
+        for(i=n;i>=1;i--){
+            for(j=1;j<=n-i;j++){
+                printf("   ");
+            }
+            for(k=1;k<=2*i-1;k++){
+                printf(" * ");
+            }
+            printf("\n");
+        }
+
+return 0;
+}
+
+PRINTING IN SIDE TRIANGLE
+
+#include<stdio.h>
+int main(){
+    int n,i,j,k;
+    scanf("%d",&n);
+    for(i=n;i>=1;i--){
+        for(j=1;j<i;j++){
+            printf("");
+            }
+            for(k=i;k<=n;k++){
+                printf("*");
+            }
+            printf("\n");
+        }
+    return 0;
+}
+
+BUTTERFLY
+
+
+int main(){
+    int n,i,j,k;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(k=1;k<=i;k++){
+            printf("*");
+        }
+        for(j=1;j<=(n-i)*2;j++){
+            printf(" ");
+        }
+        for(k=1;k<=i;k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(i=n-1;i>=1;i--){
+        for(j=1;j<=i;j++){
+            printf("*");
+        }
+        for(k=(n-i)*2;k>=1;k--){
+            printf(" ");
+        }
+        for(k=1;k<=i;k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+BOX
+
+int main(){
+    int n,i,j,k;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n;j++){
+            if(i==1||i==n||j==1||j==n){
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+number printing
+int main(){
+    int n;
+    scanf("%d",&n);
+    int j,i,value=1;
+    for(i=1;i<=n;printf("\n"),i++){
+        for(j=1;j<=i;j++){
+                if(value<=n)
+                   printf(" %02d ",value++);
+        }
+    }
+
+A
+AB
+ABC
+ABCD
+ABCDE
+
+ for(i=1;i<=n;printf("\n"),i++){
+        for(j=1;j<=i;j++){
+                printf("%c",j+64);
+
+        }
+    }
+A
+BC
+DEF
+GHIJ
+KLMNO
+
+ for(i=1;i<=n;printf("\n"),i++){
+        for(j=1;j<=i;j++){
+                printf("%c",value);
+                value++;
+
+        }
+    }
+A
+BB
+CCC
+DDDD
+EEEEE
+for(i=1;i<=n;printf("\n"),i++){
+        for(j=1;j<=i;j++){
+                printf("%c",value);
+                //value++;
+        }
+        value++;
+    }
+Function
+
+#include<stdio.h>
+int sum(int,int,int,int);
+int mul(int,int,int,int);
+int div(int,int,int,int);
+void main(){
+    int m,n,o,p,k;
+    scanf("%d%d%d%d",&m,&n,&o,&p);
+    printf("%d\n",sum(m,n,o,p));
+    printf("%d\n",mul(m,n,o,p));
+    printf("%d\n",div(m,n,o,p));
+    //sum(9,3,45,5);
+    printf("he is not interrested\n");
+    printf("He is not interrested");
+
+   //printf("%d\n",sum(m,n,o,p));
+}
+int sum(int a,int b,int c,int d){
+    int k=(a+b+c+d);
+    printf("%d\n",k);
+    return 0;
+}
+int mul(int a,int b,int c,int d){
+    int mul=a*b*c*d;
+    return mul;
+
+}
+int div(int a,int b,int c,int d){
+    int div=(a+b)/(c+d);
+    return div;
+}
+153
+153
+It is Armstrong number because the cube of the single values are  to the sum theh total is equal.
+
+int main(){
+    int a,k,count=0,j,sum=0;
+    scanf("%d",&a);
+    int temp=a;
+    while(temp!=0){
+        count++;
+        temp/=10;
+    }
+    while(a!=0){
+        k=a%10;
+        sum=sum+pow(k,count);
+        a/=10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+FUNCTION OF THE ARMSTRONG NUMBER
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int po(int);
+int main(){
+    int n,count=0,k;
+    scanf("%d",&n);
+    k=po(n);
+    if(k==n){
+        printf("armstrong");
+    }
+    else{
+        printf("not a armstong");
+    }
+
+}
+int po(int a){
+    int temp=a,k,count=0,j,sum=0;
+    while(temp!=0){
+        count++;
+        temp/=10;
+    }
+    while(a!=0){
+        sum=sum+pow(a%10,count);
+        a/=10;
+    }
+    return sum;
+}
+5
+30
+5 7 11 13 17 19 23 29
+
+int prime(int a){
+    int i,j,count=0;
+    for(i=2;i<=a/2;i++){
+        if(a%i==0)
+            count++;
+    }
+    if(count==0){
+        return 1;
+    }
+    else
+        return 0;
+}
+int main(){
+    int n,m,i,a;
+    scanf("%d%d",&n,&m);
+    for(i=n;i<=m;i++){
+        if(prime(i)==1)
+            printf("%d ",i);
+    }
+    return 0;
+}
+5
+*
+ *
+  *
+   *
+    *
+#include<stdio.h>
+int main(){
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n;j++){
+            if(i==j){
+               printf("*");
+        }
+        else
+            printf(" ");
+    }
+     printf("\n");
+}
+    return 0;
+}
+10
+*        *
+ *      *
+  *    *
+   *  *
+    **
+    **
+   *  *
+  *    *
+ *      *
+*        *
+int main(){
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+       for(j=1;j<=n;j++){
+            if(i==j||(i+j)==n+1)
+                printf("*");
+                else
+                printf(" ");
+    }
+     printf("\n");
+}
+5
+*****
+** **
+* * *
+** **
+*****
+int main(){
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+       for(j=1;j<=n;j++){
+            if(i==j||(i+j)==n+1||i==1||i==n||j==1||j==n)
+                printf("*");
+                else
+                printf(" ");
+    }
+     printf("\n");
+}
+         SUM USING POINTEER
+
+int sum(int *p,int *q){
+    printf("%d",*p+*q);
+}
+
+int main(){
+
+    int a,b,k;
+    scanf("%d%d",&a,&b);
+    sum(&a,&b);
+    //printf("%d",k);
+    return 0;
+}
+5 3 5 6 7 5
+int main(){
+
+    int a[6]={5,3,5,6,7,5};
+    pointer(&a,6);
+    //printf("%d",k);
+    return 0;
+}
+int pointer(int *ptr,int n){
+    int i;
+    for(i=0;i<n;i++){
+        printf("%d ",*(ptr+i));
+    }
+
+}
+BASICS OF POINTER
+   int a=10;
+    int *ptr,**ptr1;
+    ptr=&a;
+    ptr1=&ptr;
+    printf("%d\n",a);
+    printf("%u\n",&a);
+    printf("%u\n",ptr);
+    printf("%d\n",*ptr1);
+    printf("%d\n",**ptr1);
+    printf("%p\n",*ptr1);
+5 7 3 2 4
+57324
+int a[5],c=0,k=0,i;
+    for(i=0;i<5;scanf("%d",&a[i]),i++);
+    for(i=0;i<5;printf("%d",a[i]),i++);
+    return 0;
+new method
+int a[10];
+    int *ptr;
+    int i;
+    int value=1;
+    ptr=&a;
+    for(i=0;i<5;i++){
+        *(ptr+i)=value++;
+    }
+    for(i=0;i<5;i++){
+        printf("%d ",*(ptr+i));
+
+        Right Rotation
+5
+1
+2
+3
+4
+5
+5 4 3 2 1
+int i,n,temp;
+    scanf("%d",&n);
+    int arr[n];
+    int j=n-1;
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    i=0;
+    while(i<j){
+        temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+        i++;
+        j--;
+    }
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+5
+98
+10 20 30 40 50
+40 50 10 20 30
+
+    int i,n,temp,count,j;
+    scanf("%d",&n);
+    scanf("%d",&count);
+    int arr[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(j=0;j<count%5;j++){
+       temp=arr[0];
+    for(i=0;i<n-1;i++){
+        arr[i]=arr[i+1];
+    }
+    arr[n-1]=temp;
+    }
+
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+
+LINEAR SEARCH
+5
+1
+2
+3
+4
+5
+3
+Elements is present at 2
+  int i,n,temp,c,key;
+    scanf("%d",&n);
+    //scanf("%d",&c);
+    int arr[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&key);
+    for(i=0;i<n;i++){
+       if(arr[i]==key){
+        break;
+       }
+    }
+    if(i<n)
+        printf("Elements is present at %d",i);
+    else
+        printf("Elements is not present");
+    return 0;
+
+5
+97
+10 20 30 40 50
+40 50 10 20 30
+int i,n,temp,count,j;
+    scanf("%d",&n);
+    scanf("%d",&count);
+    int arr[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(j=0;j<count%5;j++){
+       temp=arr[n-1];
+    for(i=n-1;i>0;i--){
+        arr[i]=arr[i-1];
+    }
+    arr[0]=temp;
+    }
+
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+minimum in the array
+int main(){
+   int a[10],i,j,n,min;
+   scanf("%d",&n);
+   for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+   }
+   min=a[0];
+  for(i=0;i<n;i++){
+    if(a[i]<min){
+        min=a[i];
+    }
+  }
+  printf("%d",min);
+  return 0;
+}
+5
+10 20 30 40 50
+140 130 120 110 100
+ int n,sum=0,i;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+        sum+=a[i];
+    }
+    for(i=0;i<n;i++){
+        a[i]=sum-a[i];
+    }
+    for(i=0;i<n;i++){
+        printf("%d ",a[i]);
+    }
+5
+10 20 30 40 50
+140 120 90 50 0
+int n,sum=0,i;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+        sum+=a[i];
+    }
+    a[0]=sum-a[0];
+    for(i=1;i<=n;i++){
+      a[i]=a[i-1]-a[i];
+
+    }
+    for(i=0;i<n;i++){
+        printf("%d ",a[i]);
+    }
+5
+3
+-23 32 -12 56 3
+32
+int main(){
+   int n,k,i,j,flag,temp;
+   scanf("%d",&n);
+   scanf("%d",&k);
+   int a[n];
+   for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+   }
+   for(i=0;i<n-1;i++){
+        flag=0;
+   for(j=0;j<=n-2-i;j++){
+    if(a[j]>a[j+1]){
+        temp=a[j];
+        a[j]=a[j+1];
+        a[j+1]=temp;
+        flag=1;
+    }
+   }
+   if(flag==0)
+        break;
+   }
+    printf("%d ",a[k]);
+                  insert an element
+#include<stdio.h>
+int main(){
+  int n,i,index,target,found=0;
+  scanf("%d",&n);
+  int a[10];
+  for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+  }
+  scanf("%d",&index);
+  scanf("%d",&target);
+  if(index<=n){
+  for(i=n;i>=0;i--){
+      if(i==index-1){
+        a[i]=target;
+        break;
+      }
+      else{
+        a[i]=a[i-1];
+      }
+    }
+  }
+  else{
+    printf("Invalid Input");
+    found=1;
+    }
+  if(found!=1){
+  printf("Array after insertion is:\n");
+  for(i=0;i<=n;i++){
+    printf("%d\n",a[i]);
+  }
+  }
+}
+int main(){
+  int n,loc,i;
+  scanf("%d",&n);
+  int a[n];
+  for(i=0;i<n;scanf("%d",&a[i]),i++);
+  scanf("%d",&loc);
+  if(loc>n){
+    printf("Invalid Input");
+    return 0;
+  }
+  for(i=loc-1;i<n;i++){
+    a[i]=a[i+1];
+  }
+  printf("Array after deletion is:\n");
+  for(i=0;i<n-1;i++){
+    printf("%d\n",a[i]);
+  }
+}
+int main(){
+  int n,loc,i;
+  scanf("%d",&n);
+  int a[n];
+  for(i=0;i<n;scanf("%d",&a[i]),i++);
+  scanf("%d",&loc);
+  if(loc>n){
+    printf("Invalid Input");
+    return 0;
+  }
+  for(i=loc-1;i<n;i++){
+    a[i]=a[i+1];
+  }
+  printf("Array after deletion is:\n");
+  for(i=0;i<n-1;i++){
+    printf("%d\n",a[i]);
+  }
+}
+Reverrse an array
+ int n,i;
+  scanf("%d",&n);
+  int a[n];
+  for(i=0;i<n;scanf("%d",&a[i]),i++);
+  printf("Reversed array is:\n");
+  for(i=n;i>0;printf("%d\n",a[i],i--));
+
+REMOVAL OF THE DUPLICATES IN THE ARRAY
+int n,i,j,k;
+  scanf("%d",&n);
+  int a[10],b[n];
+  for(i=0;i<n;i++){
+    scanf("%d",&a[i]);
+  }
+  for(i=0;i<n;i++){
+    int found=0,c=0;
+    for(j=i+1;j<n;j++){
+        if(a[i]==a[j])
+            c++;
+    }
+    for(k=0;k<i;k++){
+        if(a[i]==a[k]){
+            found=1;
+            break;
+        }
+    }
+    if(c!=0&&found==0)
+        printf("%d ",a[i]);
+    else if(c==0&&found==0)
+        printf("%d ",a[i]);
+  }
+another method
+ int n, i, j, k;
+    scanf("%d", &n);
+    int a[100];
+    for (i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+    for (i = 0; i < n; i++) {
+        for (j = i + 1; j < n; j++) {
+            if (a[i] == a[j]) {
+                for (k = j; k < n - 1; k++) {
+                    a[k] = a[k + 1];
+                }
+                n--;   
+                j--;
+            }
+        }
+    }
+    for (i = 0; i < n; i++) {
+        printf("%d ", a[i]);
+    }
+another method
+ int k=1;
+  for(int i=1;i<n;i++){
+    if(a[i]!=a[k-1]) a[k++]=a[i];
+  }
+  printf("\n");
+  for(int i=0;i<k;i++) printf("%d ",a[i]);
+5
+10 20 30 40 50
+10 30 60 100 150
+int a[10],n,sum=0,i;
+    scanf("%d",&n);
+    for(i=0;i<n;scanf("%d",&a[i]),i++);
+    for(i=0;i<n;i++){
+        a[i]=sum+a[i];
+        sum=a[i];
+    }
+    for(i=0;i<n;printf("%d ",a[i]),i++);
+
+2DIMENSIONSAL ARRAY
+3
+3
+1 2 3 4 5 6 7 8 9
+45
+ int row,col,i,j,sum=0;
+    scanf("%d%d",&row,&col);
+    int a[row][col];
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            sum+=a[i][j];
+        }
+    }
+    printf("%d",sum);
+3
+3
+10 34 56
+67 45 31
+98 32 11
+98
+     for(i=0;i<row;i++){
+          
+        for(j=0;j<=col;j++){
+            if(a[i][j]>max)
+                max=a[i][j];
+        }
+     }
+    printf("%d",max)
+3
+3
+1 2 3
+4 5 6
+7 8 9
+7 8 9
+
+     for(i=0;i<row;i++){
+            //max=0;
+              max=a[0][i];
+        for(j=0;j<col;j++){
+            if(a[j][i]>max)
+                max=a[j][i];
+        }
+        printf("%d ",max);
+3
+3
+1 2 3
+4 5 6
+7 8 9
+9 8 7
+6 5 4
+3 2 1
+101010
+101010
+101010
+  for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+         c[i][j]=a[i][j]+b[i][j];
+        }
+     }
+     for(i=0;i<row;i++){
+     for(j=0;j<col;j++){
+        printf("%d",c[i][j]);
+     }
+5
+10
+output:45
+  for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+         c[i][j]=a[i][j]+b[i][j];
+        }
+     }
+     for(i=0;i<row;i++){
+     for(j=0;j<col;j++){
+        printf("%d",c[i][j]);
+     }
+1 2 3
+4 5 6
+7 8 9
+1 2 3
+4 5 6
+7 8 9
+the array is equal
+   for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+         if(a[i][j]!=b[i][j]){
+                found=1;
+                break;
+         }
+        }
+     }
+     if(found==0)
+        printf("the array is equal");
+     else
+        printf("the array is not equal");
+3
+3
+1 0 0
+0 1 0
+1 0 0
+It is not Identity matrix
+ for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            if(i==j){
+                if(a[i][j]!=1)
+                    break;
+            }
+            else{
+                if(a[i][j]!=0)
+                    break;
+            }
+
+        }
+    }
+    if(row==i&&col==j)
+        printf("Identity matrix");
+    else
+        printf("It is not Identity matrix");
+
+TRAPEZOIDAL
+
+for(i=0;i<row-1;i++){
+    for(j=0;j<col-1;j++){
+        if(a[i][j]!=a[i+1][j+1]){
+            break;
+        }
+    }
+   }
+   if(i==row-1&&j==col-1)
+    printf("same");
+   else
+    printf("not same");
+outer value addition
+4
+4
+1 2 3 4
+5 6 7 8
+8 9 1 2
+1 2 3 4
+43
+ for(i=0;i<row;i++){
+    for(j=0;j<col;j++){
+        if(i==0|j==0|i==row-1|j==col-1)
+            sum+=a[i][j];
+    }
+  }
+4
+4
+1 2 3 4
+5 6 7 8
+8 9 1 2
+1 2 3 4
+12
+ for(i=0;i<row;i++){
+    for(j=0;j<col;j++){
+        if(i==j)
+            sum+=a[i][j];
+    }
+  }
+4
+4
+1 2 3 4
+5 6 7 8
+8 9 1 2
+1 2 3 4
+21
+for(i=0;i<row;i++){
+    for(j=0;j<col;j++){
+            if(col-1-i==j)sum+=a[i][j];
+    }
+  }
+  printf("%d",sum);
+**  if(i+j==row-1)sum+=a[i][j];
+COUNT THE PRIME NUMBERS
+int n,i,j;
+   scanf("%d",&n);
+
+   for(i=2;i<=n;i++){
+        int count=0;
+    for(j=2;j<=i/2;j++){
+        if(i%j==0){
+            count++;
+        }
+    }
+     if(count==0){
+        printf("%d",i);
+    }
+   }
+Strings basics
+for(i=0;str[i]!='\0';i++)
+    {
+    if(str[i]>='A'&& str[i]<='Z')
+        k++;
+
+    else if(str[i]>='a'&&str[i]<='z')
+        c++;
+
+    else if(str[i]>='0'&&str[i]<='9')
+        j++;
+
+    else
+        o++;
+
+find length without inbuild function
+int i;
+for(i=0;str[i];i++);
+printf("%d",i);
+
+Copying without inbuild function
+for(i=0;str[i];i++)
+str1[i]=str[i];
+
+concatenation of two elements
+int len1=strlen(str1);
+int len2=strlen(str2);
+int i;
+char res[100];
+for(i=0;i<len1+len2;i++){
+    if(i<len1){
+        res[i]=str1[i];
+    }
+    else
+        res[i]=str1[i-len1];
+}
+res[i]='\0';
+printf("%s",res);
+
+copying of third elements
+
+char str1[]="ramakrishna";
+char str2[]="college";
+char str3[100];
+printf("%s\n",strcat(str1,str2));
+strcpy(str3,strcat(str1,str2));
+
+palindrome
+madam
+palindrome
+ while(i<l-1-i){
+        if(str[i]!=str[l-i-1])
+            break;
+        i++;
+    }
+    if(i<l-1-i)
+        printf("Not palindrome");
+    else
+        printf("palindrome");
+SPIRAL MATRIX
+int row,col,i,j;
+   scanf("%d%d",&row,&col);
+   int a[row][col];
+   for(i=0;i<row;i++){
+    for(j=0;j<col;j++){
+      scanf("%d",&a[i][j]);
+    }
+   }
+   int l=0,r=col-1,top=0,bo=row-1;
+while(l<=r&&top<=bo){
+   for(i=l;i<=r;i++){
+    printf("%d ",a[top][i]);
+   }
+   top++;
+   for(i=top;i<=bo;i++){
+    printf("%d ",a[i][r]);
+   }
+   r--;
+   for(i=r;i>=l;i--){
+    printf("%d ",a[bo][i]);
+   }
+   bo--;
+   for(i=bo;i<=top;i++){
+    printf("%d ",a[i][l]);
+   }
+   l++;
+
+string reverse
+I will make a cup of coffee
+i lliw ekam uoy a puc fo eeffoc
+char* rev(char *ch){
+    int len=strlen(ch);
+    int i=0;
+    char temp;
+    while(i < len-1-i){
+        temp=ch[i];
+        ch[i]=ch[len-1-i];
+        ch[len-1-i]=temp;
+        i++;
+    }
+    return ch;
+
+}
+coffee of cup a you make will i
+i lliw ekam uoy a puc fo eeffoc
+  int i;
+    for(i=8-1;i>=0;i--){
+        printf("%s ",ch[i]);
+    }
+    printf("\n");
+convertloweercase
+include<stdio.h>
+void convertLower(char s[])
+{
+  int i;
+    for(i=0;s[i]!='\0';i++){
+      if(s[i]>='a'&&s[i]<='z')
+      s[i]=s[i]-32;
+    }
+    printf("String with lowercase is %s",s);
+}
+int main()
+{
+    char s[100];
+    scanf("%[^\n]",s);
+    convertLower(s);
+    return 0;
+}
